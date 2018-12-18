@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@color/blueColor">
+
+    <LinearLayout
+        android:id="@+id/calculator_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewCalculator"
+                android:id="@+id/formula"
+                android:fontFamily="sans-serif-light"
+                android:text="Calcu"
+                android:textColor="@color/orangeColor"/>
+
+            <TextView
+                style="@style/TextViewCalculator"
+                android:fontFamily="sans-serif-light"
+                android:text="lator"
+                android:textColor="@color/whiteColor" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@color/blueDarkColor"
+            android:fontFamily="serif"
+            android:gravity="center_vertical|right"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:text="0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/seven"
+                    style="@style/MyButton"
+                    android:text="7"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/eight"
+                    style="@style/MyButton"
+                    android:text="8"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/nine"
+                    style="@style/MyButton"
+                    android:text="9"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/OpratorsButton">
+                <Button
+                    android:id="@+id/dev"
+                    style="@style/MyButton"
+                    android:text="÷"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/four"
+                    style="@style/MyButton"
+                    android:text="4"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/five"
+                    style="@style/MyButton"
+                    android:text="5"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/six"
+                    style="@style/MyButton"
+                    android:text="6"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/OpratorsButton">
+                <Button
+                    android:id="@+id/mul"
+                    style="@style/MyButton"
+                    android:text="*"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/one"
+                    style="@style/MyButton"
+                    android:text="1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/two"
+                    style="@style/MyButton"
+                    android:text="2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/three"
+                    style="@style/MyButton"
+                    android:text="3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/OpratorsButton">
+                <Button
+                    android:id="@+id/sub"
+                    style="@style/MyButton"
+                    android:text="-"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/zero"
+                    style="@style/MyButton"
+                    android:text="0"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/clear"
+                    style="@style/MyButton"
+                    android:text="C"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/NumbersButtons">
+                <Button
+                    android:id="@+id/show"
+                    style="@style/MyButton"
+                    android:background="@drawable/sptn2"
+                    android:text="="/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/OpratorsButton">
+                <Button
+                    android:id="@+id/add"
+                    style="@style/MyButton"
+                    android:text="+"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

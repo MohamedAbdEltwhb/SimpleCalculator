@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="result_default">0</string>
+    <string name="buttonClear">C</string>
+</resources>
